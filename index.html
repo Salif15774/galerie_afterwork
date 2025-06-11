@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #444;
+        }
+        p {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 30px;
+        }
+        .gallery {
+            display: flex;
+            overflow-x: auto;
+            gap: 15px;
+            padding: 10px;
+            scroll-behavior: smooth;
+        }
+        .gallery img {
+            max-height: 300px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            pointer-events: none; /* bloque clics, donc téléchargement */
+        }
+    </style>
+    <script>
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault(); // désactive clic droit
+        });
+    </script>
+</head>
+<body>
+
+    <h1>Merci pour votre présence !</h1>
+    <p>
+        Découvrez quelques souvenirs de notre afterwork <strong>« Relâche la pression »</strong>
+        au Domaine Trosset. Merci pour votre présence, vos échanges et votre bonne humeur !
+    </p>
+
+    <div class="gallery">
+        <img src="C:\Users\salif.samake\Documents\Projet_stage\Images\Logo Le clos de Florie.jpeg" alt="">
+        <img src="https://i.postimg.cc/ht4jvcYX/Logo-Le-clos-de-Florie.jpg" alt="Photo 2">
+        <img src="https://i.postimg.cc/xCVbH0T6/image.jpg" alt="Photo 3">
+    </div>
+
+</body>
+</html>
