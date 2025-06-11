@@ -14,43 +14,50 @@
     }
     h1, p {
       text-align: center;
+      max-width: 800px;
+      margin: auto;
     }
     .gallery {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 15px;
-      padding: 20px;
+      gap: 20px;
+      padding: 30px 0;
     }
     .gallery a img {
-      max-height: 200px;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      pointer-events: none; /* bloque clic droit sur img */
+      max-height: 220px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      pointer-events: none;
     }
   </style>
   <script>
     document.addEventListener('contextmenu', function(e) {
-      e.preventDefault();
+      e.preventDefault(); // bloque clic droit
     });
   </script>
 </head>
 <body>
 
   <h1>Merci pour votre présence !</h1>
-  <p>Voici quelques souvenirs de la soirée Afterwork au Domaine Trosset.</p>
+  <p>
+    Un grand merci pour votre participation à l’afterwork <strong>« Relâche la pression »</strong> au Domaine Trosset.<br>
+    Retrouvez ci-dessous quelques souvenirs de cette belle soirée placée sous le signe de la convivialité 🍷✨
+  </p>
 
   <div class="gallery">
-    <a href="https://i.postimg.cc/Y0W5sWKg/photo-afterwork1.jpg" data-lightbox="afterwork" data-title="Photo 1">
+    <a href="https://i.postimg.cc/Y0W5sWKg/photo-afterwork1.jpg" data-lightbox="afterwork" data-title="Échanges au cœur de la cave">
       <img src="https://i.postimg.cc/Y0W5sWKg/photo-afterwork1.jpg" alt="Photo 1">
     </a>
-    <a href="https://i.postimg.cc/j5dF4Hrb/photo-afterwork2.jpg" data-lightbox="afterwork" data-title="Photo 2">
+    <a href="https://i.postimg.cc/j5dF4Hrb/photo-afterwork2.jpg" data-lightbox="afterwork" data-title="Dégustation des vins">
       <img src="https://i.postimg.cc/j5dF4Hrb/photo-afterwork2.jpg" alt="Photo 2">
     </a>
-    <a href="https://i.postimg.cc/W4ZzPx3J/photo-afterwork3.jpg" data-lightbox="afterwork" data-title="Photo 3">
+    <a href="https://i.postimg.cc/W4ZzPx3J/photo-afterwork3.jpg" data-lightbox="afterwork" data-title="Ambiance chaleureuse">
       <img src="https://i.postimg.cc/W4ZzPx3J/photo-afterwork3.jpg" alt="Photo 3">
     </a>
   </div>
+
+  <p style="font-size: 13px; color: #777;">Les photos ne sont pas téléchargeables – usage interne uniquement.</p>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox-plus-jquery.min.js"></script>
 </body>
